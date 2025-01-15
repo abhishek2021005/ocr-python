@@ -3,18 +3,13 @@
         "slideContent": "\nPrerequisites for AI-1\n\n▷Content Prerequisites\n                The mandatory\ncourses\n                in CS@FAU; Sem. 1-4, in particular:\n\n\n▷Course\n                “Algorithmen und Datenstrukturen”.(Algorithms & Data Structures)\n\n\n▷Course\n                “Grundlagen der Logik in der Informatik” (GLOIN).(Logic in CS)\n\n\n▷Course\n                “Berechenbarkeit und Formale Sprachen”.(Theoretical CS)\n\n\n▷Skillset Prerequisite\n                Coping with\nmathematical\n                formulation of the structures\n\n\n▷Mathematics\n                is the language of science(in particular\ncomputer science)\n\n\n▷It allows us to be very precise about what we mean.\n(good for you)\n\n\n▷Intuition\n(take them with a kilo of salt)\n\n\n▷This is what I assume you know!(I have to assume something)\n\n\n▷In most cases, the dependency on these is partial and “in spirit”.\n\n\n▷If you have not taken these (or do not remember), read up on them as needed!\n\n\n▷Real Prerequisites\n                Motivation, interest, curiosity, hard work.(AI-1 is non-trivial)\n\n\n▷You can do this course if you want!(and I hope you are successful)\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-14\n",
         "sectionId": "520979b6",
         "archive": "courses/FAU/AI/course",
-        "filepath": "course/slides/prerequisites.en.xhtml",
-        "slideIdx": "1",
-        "startTime_sec": "1.78",
-        "endTime_sec": "9.78"
-
+        "filepath": "course/slides/prerequisites.en.xhtml"
     },
     {
         "slideContent": "\nAssessment, Grades\n\n▷Overall (Module) Grade\n\n\n▷Grade\n                  via the\nexam\n                  (Klausur)\n⤳\n100%\n                  of the\ngrade.\n\n\n▷Up to\n10%\n                  bonus on-top for an\nexam\n                  with\n≥50%\n                  points.(<50%\n⤳\n                      no bonus)\n\n\n▷Bonus points\n=^\npercentage\nsum\n                  of the best 10\nprepquizzes\n                  divided by 100.\n\n\n▷Exam\n                  90 minutes\nexam\n                  conducted in presence on paper!(∼\n                      April 1. 2025)\n\n\n▷Retake Exam\n                  90 min\nexam\n                  six months later.(∼\n                      October 1. 2025)\n\n\n▷\n                  Register for\nexams\n                  in\nhttps://campo.fau.de.\n(there is a deadine!)\n\n\n▷Note\n                  You can de-register from an\nexam\n                  on\nhttps://campo.fau.de\n                  up to three working days before\nexam.(do not miss that if you are not prepared)\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-14\n",
         "sectionId": "520979b6",
         "archive": "courses/FAU/AI/course",
-        "filepath": "course/slides/grading.en.xhtml",
-
+        "filepath": "course/slides/grading.en.xhtml"
     },
     {
         "slideContent": "\nPreparedness Quizzes\n\n▷PrepQuizzes\n                  Every tuesday 16:15 we start the\nlecture\n                  with a 10 min online\nquiz\n                  — the\nPrepQuiz\n                  — about the material from the previous week.(starts in week 2)\n\n\n▷Motivations\n                  We do this to\n\n\n▷keep you prepared and working continuously.(primary)\n\n\n▷update the\nALeA\nlearner model\n(fringe benefit)\n\n\n▷The\nprepquiz\n              will be given in the\nALeA\n              system\n\n\n\n▷https://courses.voll-ki.fau.de/quiz-dash/ai-1\n\n\n▷You have to be\nlogged into\nALeA!(via\nFAU IDM)\n\n\n▷You can take the\nprepquiz\n                                on your laptop or phone, ...\n\n▷...in the\nlecture\n                                or at home ...\n\n▷...via WLAN or 4G Network.\n(do not overload)\n\n\n▷Prepquizzes\n                                will only be available 16:15-16:25!\n\n\n\n\n\n\n\n\n \n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-14\n",
@@ -290,7 +285,10 @@
         "slideContent": "\nQuerying\n              the\nKnowledge base:\nAnswer Substitutions\n\n▷\n                  If a\nquery\n                  contains\nvariables, then\nProlog\n                  will return an\nanswer substitution\n                  as the\nresult\n                  to the\nquery, i.e the\nvalues\n                  for all the\nquery\nvariables\n                  accumulated during repeated\nbackchaining.\n\n\n▷\n                  We talk about (Bavarian) cars for a change, and use a\nquery\n                  with a\nvariables\n\n\nhas_wheels(mybmw,4).\nhas_motor(mybmw).\ncar(X):―has_wheels(X,4),has_motor(X).\n?― car(Y) % query\n?― has_wheels(Y,4),has_motor(Y). % substitution X = Y\n?― has_motor(mybmw). % substitution Y = mybmw\nY = mybmw % answer substitution\ntrue\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-14\n",
         "sectionId": "ca07c077",
         "archive": "courses/FAU/AI/course",
-        "filepath": "prolog/slides/answersubst.en.xhtml"
+        "filepath": "prolog/slides/answersubst.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 3906.6,
+        "end_time": 3927.7
     },
     {
         "slideContent": "\nPROLOG: Are there Fallible Greeks?\n\n▷Program\n\n\nhuman(leibniz).\nhuman(sokrates).\ngreek(sokrates).\nfallible(X):―human(X).\n\n▷Query\n?―fallible(X),greek(X).\n\n\n▷Answer substitution\n[sokrates/𝑋]\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-14\n",
@@ -1886,7 +1884,10 @@
         "slideContent": "\nOur Agenda for This Topic\n\n▷This\ndocument: Basic\ndefinitions\n            and\nconcepts;\ntableaux,\nresolution.\n\n\n▷Sets up the framework.\nResolution\n            is the quintessential\nreasoning\nprocedure\n            underlying most successful\nSAT solvers.\n\n\n▷Next Section (??): The\nDavis Putnam\nprocedure\n            and\nclause learning; practical problem structure.\n\n\n▷State-of-the-art\nalgorithms\n            for\nreasoning\n            about\npropositional logic, and an important\nobservation\n            about how they behave.\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-15\n",
         "sectionId": "dc2672c7",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/proplog-agenda.en.xhtml"
+        "filepath": "logic/slides/proplog-agenda.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 2241.41,
+        "end_time": 2303.01
     },
     {
         "slideContent": "\nOur Agenda for This Chapter\n\n▷Propositional logic: What’s the\nsyntax\n            and\nsemantics? How can we capture\ndeduction?\n\n\n▷We\nstudy\n            this\nlogic\nformally.\n\n\n▷Tableaux,\nResolution: How can we make\ndeduction\n            mechanizable? What are its\nproperties?\n\n\n▷Formally introduces the most basic\nmachine-oriented\nreasoning\nalgorithm.\n\n\n▷Killing a\nWumpus: How can we use all this to figure out where the\nWumpus\n            is?\n\n\n▷Coming back to our introductory\nexample.\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 122024-12-15\n",
@@ -1910,7 +1911,10 @@
         "slideContent": "\nAlternative Notations for\nConnectives\n\nHere Elsewhere¬𝐀 ∼𝐀 𝐀―𝐀∧𝐁 𝐀&𝐁 𝐀•𝐁 𝐀,𝐁𝐀∨𝐁 𝐀+𝐁 𝐀|𝐁 𝐀;𝐁𝐀⇒𝐁 𝐀→𝐁𝐀⊃𝐁𝐀⇔𝐁 𝐀↔𝐁𝐀≡𝐁𝐹 ⊥0𝑇 ⊤1\n\n\n\n:\n12024-12-15\n",
         "sectionId": "69703b1f",
         "archive": "courses/Jacobs/GenCS/course",
-        "filepath": "pl0/slides/pl0-notations.en.xhtml"
+        "filepath": "pl0/slides/pl0-notations.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 3195.51,
+        "end_time": 3244.8
     },
     {
         "slideContent": "\nComputing\nSemantics\n\n▷Let\n𝜑:=[𝖳/𝑃1],[𝖥/𝑃2],[𝖳/𝑃3],[𝖥/𝑃4],...\n                    then\nℐ𝜑(𝑃1∨𝑃2∨¬(¬𝑃1∧𝑃2)∨𝑃3∧𝑃4)\n\n=ℐ(∨)(ℐ𝜑(𝑃1∨𝑃2),ℐ𝜑(¬(¬𝑃1∧𝑃2)∨𝑃3∧𝑃4))\n\n=ℐ(∨)(ℐ(∨)(ℐ𝜑(𝑃1),ℐ𝜑(𝑃2)),ℐ(∨)(ℐ𝜑(¬(¬𝑃1∧𝑃2)),ℐ𝜑(𝑃3∧𝑃4)))\n\n=ℐ(∨)(ℐ(∨)(𝜑(𝑃1),𝜑(𝑃2)),ℐ(∨)(ℐ(¬)(ℐ𝜑(¬𝑃1∧𝑃2)),ℐ(∧)(ℐ𝜑(𝑃3),ℐ𝜑(𝑃4))))\n\n=ℐ(∨)(ℐ(∨)(𝖳,𝖥),ℐ(∨)(ℐ(¬)(ℐ(∧)(ℐ𝜑(¬𝑃1),ℐ𝜑(𝑃2))),ℐ(∧)(𝜑(𝑃3),𝜑(𝑃4))))\n\n=ℐ(∨)(𝖳,ℐ(∨)(ℐ(¬)(ℐ(∧)(ℐ(¬)(ℐ𝜑(𝑃1)),𝜑(𝑃2))),ℐ(∧)(𝖳,𝖥)))\n\n=ℐ(∨)(𝖳,ℐ(∨)(ℐ(¬)(ℐ(∧)(ℐ(¬)(𝜑(𝑃1)),𝖥)),𝖥))\n\n=ℐ(∨)(𝖳,ℐ(∨)(ℐ(¬)(ℐ(∧)(ℐ(¬)(𝖳),𝖥)),𝖥))\n\n=ℐ(∨)(𝖳,ℐ(∨)(ℐ(¬)(ℐ(∧)(𝖥,𝖥)),𝖥))\n\n=ℐ(∨)(𝖳,ℐ(∨)(ℐ(¬)(𝖥),𝖥))\n\n=ℐ(∨)(𝖳,ℐ(∨)(𝖳,𝖥))\n\n=ℐ(∨)(𝖳,𝖳)\n\n=𝖳\n\n\n\n\n\n▷What a mess!\n\n\n\n:\n12024-12-16\n",
@@ -2312,7 +2316,10 @@
         "slideContent": "\nReminder: Our Agenda for Propositional Logic\n\n▷??: Basic definitions and concepts; machine-oriented calculi\n\n\n▷Sets up the framework.\nTableaux\n            and\nresolution\n            are the quintessential reasoning procedures underlying most successful\nSAT solvers.\n\n\n▷This chapter: The\nDavis Putnam procedure\n            and\nclause learning.\n\n\n▷State-of-the-art\nalgorithms\n            for reasoning about propositional logic, and an important observation about how they behave.\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-15\n",
         "sectionId": "d445b4ae",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/propsat-intro.en.xhtml"
+        "filepath": "logic/slides/propsat-intro.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 2241.41,
+        "end_time": 2303.01
     },
     {
         "slideContent": "\nSAT: The Propositional Satisfiability Problem\n\n▷\n                  The\nSAT problem\n                  (SAT): Given a\npropositional formula\n𝐀, decide whether or not\n𝐀\n                  is\nsatisfiable. We denote the class of all\nSAT problems\n                  with\nSAT\n\n\n▷The\nSAT problem\n              was the first problem proved to be\n𝐍𝐏-complete!\n\n\n▷𝐀\n              is commonly assumed to be in\nCNF. This is\nwithout loss of generality, because any\n𝐀\n              can be transformed into a satisfiability-equivalent\nCNF\n              formula (cf.\n??) in\npolynomial time.\n\n\n▷Active research area, annual\nSAT\n              conference, lots of tools etc. available:\nhttp://www.satlive.org/\n\n\n▷\n                  Tools addressing\nSAT\n                  are commonly referred to as\nSAT solvers.\n\n\n▷Recall\n                  To decide whether\nKB⊨𝐀, decide satisfiability of\n𝜃:=KB∪{¬𝐀}:\n𝜃\n                  is\nunsatisfiable\n                  iff\nKB⊨𝐀.\n\n\n▷Consequence\n                  Deduction can be performed using\nSAT solvers.\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-14\n",
@@ -2384,13 +2391,19 @@
         "slideContent": "\nDPLL vs. Resolution: Example (Vanilla2)\n\n▷Observation\n                  The\nproof\n                  of\n??\n                  is\nconstructive, so we can use it as a method to read of a\nresolution proof\n                  from a\nDPLL\n                  trace.\n\n\n▷\n                  We follow the steps in the\nproof\n                  of\n??\n                  for\n∆:=(𝑄𝖥∨𝑃𝖥);(𝑃𝖳∨𝑄𝖥∨𝑅𝖥∨𝑆𝖥);(𝑄𝖳∨𝑆𝖥);(𝑅𝖳∨𝑆𝖥);(𝑆𝖳)\n\n\n\nDPLL: (Without\nUP; leaves annotated with\nclauses\n                                    that became\nempty)\n\nResolution proof\n                                    from that\nDPLL\n                                    tree:\n\n\n\n\n\n𝑄𝖥∨𝑃𝖥  \n𝑃𝖳∨𝑄𝖥∨𝑅𝖥∨𝑆𝖥  \n𝑅𝖳∨𝑆𝖥  \n𝑄𝖳∨𝑆𝖥  \n𝑆𝖳  \n\n𝑆  \n\n𝑄  \n\n𝑅  \n\n𝑃  \n\n𝖳  \n\n𝖥  \n\n𝖳  \n\n𝖥  \n\n𝖳  \n\n𝖥  \n\n𝖳  \n\n𝖥  \n\n\n\n\n\n\n\n\n\n\n𝑄𝖥∨𝑃𝖥  \n𝑃𝖳∨𝑄𝖥∨𝑅𝖥∨𝑆𝖥  \n𝑅𝖳∨𝑆𝖥  \n𝑄𝖳∨𝑆𝖥  \n𝑆𝖳  \n□  \n𝑆𝖥  \n𝑄𝖥∨𝑆𝖥  \n𝑄𝖥∨𝑅𝖥∨𝑆𝖥  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n▷Intuition\n                  From a (top-down)\nDPLL\n                  tree, we generate a (bottom-up)\nresolution proof.\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-16\n",
         "sectionId": "e97bb7a6",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/DPLLvsResolution-ex.en.xhtml"
+        "filepath": "logic/slides/DPLLvsResolution-ex.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 486.29,
+        "end_time": 496.09
     },
     {
         "slideContent": "\nDPLL vs. Resolution: Discussion\n\n▷So What?\n                  The theorem we just proved helps to\nunderstand\nDPLL:DPLL\n                  is an\nefficient\n                  practical method for conducting\nresolution proofs.\n\n\n▷In fact\nDPLL\n=^\ntree resolution.\n\n\n▷\n                  In a\ntree resolution, each\nderived\nclause\n𝐶\n                  is used only once (at its\nparent).\n\n\n▷Problem\n                  The same\n𝐶\n                  must be\nderived\n                  anew every time it is used!\n\n\n▷This is a fundamental weakness\n                  There are inputs\n∆\n                  whose shortest\ntree resolution\n                  proof is\nexponentially\n                  longer than their shortest (general)\nresolution proof.\n\n\n▷Intuitively\nDPLL\n                  makes the same mistakes over and over again.\n\n\n▷Idea\nDPLL\n                  should learn from its mistakes on one search\nbranch, and apply the learned knowledge to other\nbranches.\n\n\n▷To the rescueclause learning(up next)\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-16\n",
         "sectionId": "e97bb7a6",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/DPLLvsResolution-discussion.en.xhtml"
+        "filepath": "logic/slides/DPLLvsResolution-discussion.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 471.68,
+        "end_time": 486.29
     },
     {
         "slideContent": "\nSummary\n\n▷SAT solvers\n            decide satisfiability of CNF formulas. This can be used for deduction, and is highly successful as a general problem solving technique (e.g., in\nverification).\n\n\n▷DPLL\n=^\nbacktracking\n            with inference performed by\nunit propagation\n            (UP), which iteratively instantiates\nunit clauses\n            and simplifies the\nformula.\n\n\n▷DPLL\n            proofs of unsatisfiability correspond to a restricted form of\nresolution. The restriction forces\nDPLL\n            to “makes the same mistakes over again”.\n\n\n▷Implication graphs\n            capture how\nUP\nderives\n            conflicts. Their analysis enables us to do\nclause learning.\nDPLL\n            with\nclause learning\n            is called\nCDCL. It corresponds to full\nresolution, not “making the same mistakes over again”.\n\n\n▷CDCL\n            is\nstate of the art\n            in applications, routinely solving formulas with millions of propositions.\n\n\n▷In particular random formula distributions, typical problem hardness is characterized by\nphase transitions.\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-15\n",
@@ -2402,7 +2415,10 @@
         "slideContent": "\nState of the Art in\nSAT\n\n▷SAT competitions\n\n\n▷Since beginning of the 90s\nhttp://www.satcompetition.org/\n\n\n▷random\n                vs.\nindustrial\n                vs.\nhandcrafted\nbenchmarks.\n\n\n▷Largest industrial instances:\n>1.000.000\n                propositions.\n\n\n▷State of the art is CDCL\n\n\n▷Vastly superior on handcrafted and industrial\nbenchmarks.\n\n\n▷Key techniques:\nclause learning! Also:\nEfficient\nimplementation\n                (UP!), good\nbranching\nheuristics, random restarts, portfolios.\n\n\n▷What about local search?\n\n\n▷Better on random instances.\n\n\n▷No “dramatic” progress in last decade.\n\n\n▷Parameters are difficult to adjust.\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-16\n",
         "sectionId": "ee2f5ce8",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/propsat-soa.en.xhtml"
+        "filepath": "logic/slides/propsat-soa.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 680.16,
+        "end_time": 942.81
     },
     {
         "slideContent": "\nBut — What About Local Search for SAT?\n\n▷There’s a wealth of research on local search for\nSAT, e.g.:\n\n\n▷\n                  The\nGSAT algorithm\nOUTPUT: a satisfying truth assignment of\n∆, if found\n\nfunction GSAT (∆, 𝑀𝑎𝑥𝐹𝑙𝑖𝑝𝑠 𝑀𝑎𝑥𝑇𝑟𝑖𝑒𝑠\nfor 𝑖 :=1 to 𝑀𝑎𝑥𝑇𝑟𝑖𝑒𝑠\n𝐼 := a randomly―generated truth assignment\nfor 𝑗 :=1 to 𝑀𝑎𝑥𝐹𝑙𝑖𝑝𝑠\nif 𝐼 satisfies ∆ then return 𝐼\n𝑋:= a proposition reversing whose truth assignment gives\nthe largest increase in the number of satisfied clauses\n𝐼 := 𝐼 with the truth assignment of 𝑋 reversed\nend for\nend for\nreturn ‘‘no satisfying assignment found’’\n\n▷local search\n              is not as successful in\nSAT\n              applications, and the underlying ideas are very similar to those presented in\n??(Not covered here)\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-15\n",
@@ -2414,7 +2430,10 @@
         "slideContent": "\nTopics We Didn’t Cover Here\n\n▷Variable/value selection\nheuristics: A whole zoo is out there.\n\n\n▷Implementation techniques: One of the most intensely researched subjects. Famous “watched\nliterals” technique for\nUP\n            had huge practical impact.\n\n\n▷Local search: In space of all truth value assignments. GSAT (slide\n??) had huge impact at the time (1992), caused huge amount of follow-up work. Less intensely researched since\nclause learning\n            hit the scene in the late 90s.\n\n\n▷Portfolios: How to combine several\nSAT solvers\nefficiently?\n\n\n▷Random restarts: Tackling heavy-tailed runtime distributions.\n\n\n▷Tractable\nSAT: Polynomial-time sub-classes (most prominent: 2-SAT, Horn formulas).\n\n\n▷MaxSAT: Assign weight to each\nclause,\nmaximize\n            weight of\nsatisfied\nclauses\n            (= optimization version of\nSAT).\n\n\n▷Resolution special cases: There’s a universe in between unit resolution and\nfull resolution: trade off inference vs.,search.\n\n\n▷Proof complexity: Can one\nresolution\n            special case\n𝑋\n            simulate another one\n𝑌\npolynomially? Or is there an\nexponential\n            separation (example families where\n𝑋\n            is\nexponentially\n            less\nefficient\n            than\n𝑌)?\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-15\n",
         "sectionId": "ee2f5ce8",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/propsat-not.en.xhtml"
+        "filepath": "logic/slides/propsat-not.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 942.81,
+        "end_time": 960.35
     },
     {
         "slideContent": "\nDPLL: Example (Redundance1)\n\n▷We introduce some nasty redundance to make\nDPLL\n                slow.∆:=(𝑃𝖥∨𝑄𝖥∨𝑅𝖳);(𝑃𝖥∨𝑄𝖥∨𝑅𝖥);(𝑃𝖥∨𝑄𝖳∨𝑅𝖳);(𝑃𝖥∨𝑄𝖳∨𝑅𝖥)DPLL\n                on\n∆;Θ\n                with\nΘ:=(map(/𝑚𝑛𝑡/𝑠𝑑𝑏1/𝑏𝑢𝑖𝑙𝑑𝑠𝑒𝑟𝑣𝑒𝑟/𝑀𝑎𝑡ℎ𝐻𝑢𝑏,(𝑋1𝖳)∨...∨(𝑋𝑛𝖳))𝑋1𝖳∨...∨𝑋𝑛𝖳);(map(/𝑚𝑛𝑡/𝑠𝑑𝑏1/𝑏𝑢𝑖𝑙𝑑𝑠𝑒𝑟𝑣𝑒𝑟/𝑀𝑎𝑡ℎ𝐻𝑢𝑏,(𝑋1𝖥)∨...∨(𝑋𝑛𝖥))𝑋1𝖥∨...∨𝑋𝑛𝖥)\n\n\n\n\n\n(𝑅𝖳);□  \n(𝑅𝖳);□  \n(𝑅𝖳);□  \n(𝑅𝖳);□  \n(𝑅𝖳);□  \n(𝑅𝖳);□  \n(𝑅𝖳);□  \n(𝑅𝖳);□  \n\n𝑄  \n\n𝑄  \n\n𝑄  \n\n𝑄  \n\n𝖳  \n\n𝖥  \n\n𝖳  \n\n𝖥  \n\n𝖳  \n\n𝖥  \n\n𝖳  \n\n𝖥  \n\n𝑋𝑛  \n\n𝑋𝑛  \n\n𝖳  \n\n𝖥  \n\n𝖳  \n\n𝖥  \n\n𝑋1  \n\n\n𝖳  \n\n\n\n𝖥  \n\n\n𝑃  \n  \n\n𝖳  \n\n𝖥  \n\n\n\n\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-15\n",
@@ -2510,7 +2529,10 @@
         "slideContent": "\nClause Learning vs. Resolution\n\n▷Recall\nDPLL\n=^\ntree resolution\n(from slide\n??)\n\n\n1.in particular: each\nderived\nclause\n𝐶\n                (not in\n∆) is\nderived\n                anew every time it is used.\n\n\n2.Problem: there are\n∆\n                whose shortest\ntree resolution\n                proof is\nexponentially\n                longer than their shortest (general)\nresolution proof.\n\n\n▷Good News\n                This is no longer the case with\nclause learning!\n\n\n1.We add each\nlearned clause\n𝐶\n                to\n∆, can use it as often as we like.\n\n\n2.Clause learning\n                renders\nDPLL\n                equivalent to\nfull resolution\n                [BKS04;\nPD09]. (Inhowfar exactly this is the case was an open question for ca. 10 years, so it’s not as easy as I made it look here ...)\n\n\n▷In particular\n                Selecting different variables/values to split on can\nprovably\n                not bring\nDPLL\n                up to the power of\nDPLL+Clause Learning. (cf. slide\n??, and previous slide)\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-15\n",
         "sectionId": "e913c905",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/clause-learning-vs-resolution.en.xhtml"
+        "filepath": "logic/slides/clause-learning-vs-resolution.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 471.68,
+        "end_time": 486.29
     },
     {
         "slideContent": "\n“DPLL\n              +\nClause Learning”?\n\n▷Disclaimer\n                  We have only seen\nhow to\nlearn a clause\n                    from a conflict.\n\n\n▷\n                  We will\nnot\n                  cover how the overall\nDPLL\nalgorithm\n                  changes, given this learning. Slides\n??\n                  —\n??\n                  are merely meant to give a\nrough intuition\n                  on “backjumping”.\n\n\n▷Just for the record\n(not\nexam\n                      or exercises relevant)\n\n\n▷One\ncould\n                  run “DPLL\n                  +\nClause Learning” by always\nbacktracking\n                  to the maximal-level choice variable contained in the\nlearned clause.\n\n\n▷The actual\nalgorithm\n                  is called\nConflict Directed Clause Learning\n                  (CDCL), and differs from\nDPLL\n                  more radically:\n\n\nlet 𝐿 := 0; 𝐼 := ∅\nrepeat\nexecute UP\nif a conflict was reached then /* learned clause 𝐶=𝑙1―∨...∨𝑙𝑘―∨𝑙'―*/\nif 𝐿=0 then return UNSAT\n𝐿 := max𝑖=1𝑘 level(𝑙𝑖); erase 𝐼 below 𝐿\nadd 𝐶 into ∆; add 𝑙'― to 𝐼 at level 𝐿\nelse\nif 𝐼 is a total interpretation then return 𝐼\nchoose a new decision literal 𝑙; add 𝑙 to 𝐼 at level 𝐿\n𝐿:=𝐿+1\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-15\n",
@@ -2570,31 +2592,46 @@
         "slideContent": "\nLet’s Talk About Blocks, Baby ...\n\n▷Question\n                  What do you see here?\n\n\n\n\n▷You say\n                  “All blocks are red”; “All blocks are on the table”; “A is a block”.\n\n\n▷And now\n                  Say it in\npropositional logic!\n\n\n▷Answer\n                  “isRedA”,“isRedB”, ..., “onTableA”, “onTableB”, ..., “isBlockA”, ...\n\n▷Wait a sec!\n                  Why don’t we just say, e.g., “AllBlocksAreRed” and “isBlockA”?\n\n\n▷Problem\n                  Could we conclude that A is red?(No)\n\nThese statements are atomic (just strings); their inner structure (“all blocks”, “is a block”) is not captured.\n\n\n▷Idea\nPredicate Logic\n                  (PL1) extends\npropositional logic\n                  with the ability to explicitly speak about objects and their properties.\n\n\n▷How?\n                  Variables ranging over objects, predicates describing object properties, ...\n\n▷\n\n                      “∀𝑥.block(𝑥)⇒red(𝑥)”; “block(𝐀)”\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-14\n",
         "sectionId": "91480d97",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/pl1-blocks.en.xhtml"
+        "filepath": "logic/slides/pl1-blocks.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 1554.69,
+        "end_time": 1868.28
     },
     {
         "slideContent": "\nLet’s Talk About the\nWumpus\n              Instead?\n\n▷\n\n\n\n\n\nPercepts:\n[𝑆𝑡𝑒𝑛𝑐ℎ,𝐵𝑟𝑒𝑒𝑧𝑒,𝐺𝑙𝑖𝑡𝑡𝑒𝑟,𝐵𝑢𝑚𝑝,𝑆𝑐𝑟𝑒𝑎𝑚]\n\n\n▷Cell adjacent to\nWumpus:\n𝑆𝑡𝑒𝑛𝑐ℎ\n                                (else:\n𝑁𝑜𝑛𝑒).\n\n\n▷Cell adjacent to Pit:\n𝐵𝑟𝑒𝑒𝑧𝑒\n                                (else:\n𝑁𝑜𝑛𝑒).\n\n\n▷Cell that contains gold:\n𝐺𝑙𝑖𝑡𝑡𝑒𝑟\n                                (else:\n𝑁𝑜𝑛𝑒).\n\n\n▷You walk into a wall:\n𝐵𝑢𝑚𝑝\n                                (else:\n𝑁𝑜𝑛𝑒).\n\n\n▷Wumpus\n                                shot by arrow:\n𝑆𝑐𝑟𝑒𝑎𝑚\n                                (else:\n𝑁𝑜𝑛𝑒).\n\n\n\n\n \n\n▷Say, in\npropositional logic: “Cell adjacent to\nWumpus:\n𝑆𝑡𝑒𝑛𝑐ℎ.”\n\n\n▷𝑊1,1⇒𝑆1,2∧𝑆2,1\n\n\n▷𝑊1,2⇒𝑆2,2∧𝑆1,1∧𝑆1,3\n\n\n▷𝑊1,3⇒𝑆2,3∧𝑆1,2∧𝑆1,4\n\n\n▷...\n\nNote\n                  Even when we\ncan\n                  describe the problem suitably, for the desired reasoning, the propositional formulation typically is way too large to write (by hand).\n\n\n▷\n\n▷PL1 solution\n                  “∀𝑥.Wumpus(𝑥)⇒(∀𝑦.adj(𝑥,𝑦)⇒stench(𝑦))”\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-14\n",
         "sectionId": "91480d97",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/pl1-wumpus.en.xhtml"
+        "filepath": "logic/slides/pl1-wumpus.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 1868.28,
+        "end_time": 2006.45
     },
     {
         "slideContent": "\nBlocks/Wumpus, Who Cares? Let’s Talk About Numbers!\n\n▷Even worse!\n\n\n▷Integers\n                  A limited vocabulary to talk about these\n\n\n\n▷The objects:\n{1,2,3,...}.\n\n\n▷Predicate 1: “even(𝑥)” should be true iff\n𝑥\n                      is even.\n\n\n▷Predicate 2: “eq(𝑥,𝑦)” should be true iff\n𝑥=𝑦.\n\n\n▷Function:\nsucc(𝑥)\n                      maps\n𝑥\n                      to\n𝑥+1.\n\n\n▷Old problem\n                  Say, in\npropositional logic, that “1+1=2”.\n\n\n▷Inner structure of vocabulary is ignored (cf. “AllBlocksAreRed”).\n\n\n▷PL1 solution: “eq(succ(1),2)”.\n\n\n▷New Problem\n                  Say, in\npropositional logic, “if\n𝑥\n                  is even, so is\n𝑥+2”.\n\n\n▷It is impossible to speak about\ninfinite\n                  sets of objects!\n\n\n▷PL1 solution: “∀𝑥.even(𝑥)⇒even(succ(succ(𝑥)))”.\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-15\n",
         "sectionId": "91480d97",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/pl1-numbers.en.xhtml"
+        "filepath": "logic/slides/pl1-numbers.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 2006.45,
+        "end_time": 2061.21
     },
     {
         "slideContent": "\nNow We’re Talking\n\n▷\n\n∀𝑛.gt(𝑛,2)⇒¬(∃𝑎,𝑏,𝑐.eq(plus(pow(𝑎,𝑛),pow(𝑏,𝑛)),pow(𝑐,𝑛)))\n                  Read:\nForall\n𝑛>2, there are\n𝑎,𝑏,𝑐, such that\n𝑎𝑛+𝑏𝑛=𝑐𝑛(Fermat’s last theorem)\n\n\n▷Theorem proving in PL1\n                  Arbitrary theorems, in principle.\n\n\n▷Fermat’s last theorem is of course infeasible, but interesting theorems can and have been proved automatically.\n\n\n▷See\nhttp://en.wikipedia.org/wiki/Automated_theorem_proving.\n\n\n▷Note: Need to axiomatize “Plus”, “PowerOf”, “Equals”. See\nhttp://en.wikipedia.org/wiki/Peano_axioms\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 122024-12-15\n",
         "sectionId": "91480d97",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/pl1-numbers.en.xhtml"
+        "filepath": "logic/slides/pl1-numbers.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 2061.21,
+        "end_time": 2178.32
     },
     {
         "slideContent": "\nWhat Are the Practical Relevance/Applications?\n\n▷...\n              even asking this question is a sacrilege:\n\n\n▷(Quotes from Wikipedia)\n\n\n▷“In Europe, logic was first developed by Aristotle. Aristotelian logic became widely accepted in science and mathematics.”\n\n\n▷“The development of logic since Frege, Russell, and Wittgenstein had a profound influence on the practice of philosophy and the perceived nature of philosophical problems, and Philosophy of mathematics.”\n\n\n▷“During the later medieval period, major efforts were made to show that Aristotle’s ideas were compatible with Christian faith.”\n\n\n▷(In other words: the church issued for a long time that Aristotle’s ideas were\nincompatible with Christian faith.)\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-15\n",
         "sectionId": "91480d97",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/pl1-applications.en.xhtml"
+        "filepath": "logic/slides/pl1-applications.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 2178.32,
+        "end_time": 2180.39
     },
     {
         "slideContent": "\nWhat Are the Practical Relevance/Applications?\n\n▷You’re asking it anyhow\n\n\n▷Logic programming. Prolog et al.\n\n\n▷Databases. Deductive databases where elements of logic allow to conclude additional facts. Logic is tied deeply with database theory.\n\n\n▷Semantic technology. Mega-trend since\n>\n                a decade. Use PL1 fragments to annotate data sets, facilitating their use and analysis.\n\n\n▷Prominent PL1 fragment:\nWeb Ontology Language\nOWL.\n\n\n▷Prominent data set: The\nWWW.\n(semantic web)\n\n\n▷Assorted quotes on Semantic Web and\nOWL\n\n\n▷The brain of humanity.\n\n\n▷The Semantic Web will never work.\n\n\n▷A TRULY meaningful way of\ninteracting\n                  with the\nWeb\n                  may finally be here: the Semantic Web. The idea was proposed 10 years ago. A triumvirate of internet heavyweights — Google, Twitter, and Facebook — are making it real.\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 122024-12-15\n",
@@ -2606,49 +2643,73 @@
         "slideContent": "\n(A Few) Semantic Technology Applications\n\nWeb Queries Jeopardy (IBM Watson) Context-Aware Apps Healthcare  \n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-16\n",
         "sectionId": "91480d97",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/pl1-semantic-technology.en.xhtml"
+        "filepath": "logic/slides/pl1-semantic-technology.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 2180.39,
+        "end_time": 2241.41
     },
     {
         "slideContent": "\nOur Agenda for This Topic\n\n▷This Chapter: Basic definitions and concepts; normal forms.\n\n\n▷Sets up the framework and basic operations.\n\n\n▷Syntax: How to write PL1 formulas?(Obviously required)\n\n\n▷Semantics: What is the meaning of PL1 formulas?\n(Obviously required.)\n\n\n▷Normal Forms: What are the basic normal forms, and how to obtain them?\n(Needed for\nalgorithms, which are defined on these normal forms.)\n\n\n▷Next Chapter: Compilation to propositional reasoning; unification; lifted resolution/tableau.\n\n\n▷Algorithmic\n            principles for reasoning about predicate logic.\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-14\n",
         "sectionId": "91480d97",
         "archive": "courses/FAU/AI/course",
-        "filepath": "logic/slides/pl1-agenda.en.xhtml"
+        "filepath": "logic/slides/pl1-agenda.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 2241.41,
+        "end_time": 2303.01
     },
     {
         "slideContent": "\nFirst-Order Predicate Logic (PL1)\n\n▷Coverage\n                  We can talk about(All humans are mortal)\n\n\n▷individual things\n                  and denote them by variables or constants\n\n\n▷properties of individuals,\n(e.g. being human or mortal)\n\n\n▷relations of individuals,(e.g.\n𝑠𝑖𝑏𝑙𝑖𝑛𝑔\n_\n𝑜𝑓\n                      relationship)\n\n\n▷functions on individuals,(e.g. the\n𝑓𝑎𝑡ℎ𝑒𝑟\n_\n𝑜𝑓\n                      function)\n\n\nWe can also state the\nexistence\n                  of an individual with a certain property, or the\nuniversality\n                  of a property.\n\n\n▷But we cannot state assertions like\n\n\n▷There is a surjective function from the natural numbers into the reals.\n\n\n▷First-Order Predicate Logic has many good properties\n(complete calculi, compactness, unitary, linear unification,...)\n\n\n▷But too weak for formalizing:(at least directly)\n\n\n▷natural numbers, torsion groups, calculus, ...\n\n▷generalized quantifiers\n              (most, few,...)\n\n\n\n:\nComputational Logic12024-12-14\n",
         "sectionId": "fbc7839d",
         "archive": "courses/Jacobs/CompLog",
-        "filepath": "pl1/slides/overview.en.xhtml"
+        "filepath": "pl1/slides/overview.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 2303.01,
+        "end_time": 2716.45
     },
     {
         "slideContent": "\nPL1\n              Syntax (Signature and Variables)\n\n▷\nFirst-order logic\n                  (PL1), is a\nformal system\n                  extensively used in\nmathematics, philosophy, linguistics, and\ncomputer science. It combines\npropositional logic\n                  with the ability to quantify over individuals.\n\n\n▷\nPL1\n                  talks about two kinds of objects:(so we have two kinds of symbols)\n\n\n▷truth values\n                  by reusing\nPL0\n\n\n▷individuals, e.g. numbers, foxes, Pokémon,...\n\n\n▷A\nfirst-order signature\n                  consists of\n(all\ndisjoint;\n𝑘∊ℕ)\n\n\n▷connectives:\nΣ0={𝑇,𝐹,¬,∨,∧,⇒,⇔,...}(functions on truth values)\n\n\n▷function constants:\nΣ𝑘𝑓={𝑓,𝑔,ℎ,...}(𝑘-ary functions\n                      on\nindividuals)\n\n\n▷predicate constants:\nΣ𝑝𝑘={𝑝,𝑞,𝑟,...}\n(𝑘-ary relations\n                      among\nindividuals.)\n\n\n▷(Skolem constants:\nΣ𝑘𝑠𝑘={𝑓𝑘1,𝑓𝑘2,...})(witness constructors; countably\n∞)\n\n\n▷We take\nΣ1\n                  to be all of these together:\nΣ1:=Σ𝑓∪Σ𝑝∪Σ𝑠𝑘\n                  and define\nΣ:=Σ1∪Σ0.\n\n\n▷\n                  We assume a set of\nindividual variables:\n𝒱𝜄:={𝑋,𝑌,𝑍,...}.\n(countably\n∞)\n\n\n\n:\nComputational Logic12024-12-14\n",
         "sectionId": "ad95eaa4",
         "archive": "courses/Jacobs/CompLog",
-        "filepath": "pl1/slides/pl1-signature.en.xhtml"
+        "filepath": "pl1/slides/pl1-signature.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 2716.45,
+        "end_time": 3040.59
     },
     {
         "slideContent": "\nPL1\nSyntax\n              (Formulae)\n\n▷\nTerms:\n𝐀∊𝑤𝑓𝑓𝜄(Σ1,𝒱𝜄)\n(denote individuals)\n\n\n▷𝒱𝜄⊆𝑤𝑓𝑓𝜄(Σ1,𝒱𝜄),\n\n\n▷if\n𝑓∊Σ𝑘𝑓\n                  and\n𝐀𝑖∊𝑤𝑓𝑓𝜄(Σ1,𝒱𝜄)\n                  for\n𝑖≤𝑘, then\n𝑓(𝐀1,...,𝐀𝑘)∊𝑤𝑓𝑓𝜄(Σ1,𝒱𝜄).\n\n\n▷First-order propositions:\n𝐀∊𝑤𝑓𝑓𝑜(Σ1,𝒱𝜄):(denote truth values)\n\n\n▷if\n𝑝∊Σ𝑝𝑘\n                  and\n𝐀𝑖∊𝑤𝑓𝑓𝜄(Σ1,𝒱𝜄)\n                  for\n𝑖≤𝑘, then\n𝑝(𝐀1,...,𝐀𝑘)∊𝑤𝑓𝑓𝑜(Σ1,𝒱𝜄),\n\n\n▷if\n𝐀,𝐁∊𝑤𝑓𝑓𝑜(Σ1,𝒱𝜄)\n                  and\n𝑋∊𝒱𝜄, then\n𝑇,𝐀∧𝐁,¬𝐀,∀𝑋.𝐀∊𝑤𝑓𝑓𝑜(Σ1,𝒱𝜄).\n\n∀\n                  is a\nbinding operator\n                  called the\nuniversal quantifier.\n\n\n▷\n                  We define the\nconnectives\n𝐹,∨,⇒,⇔\n                  via the abbreviations\n𝐀∨𝐁:=¬(¬𝐀∧¬𝐁),\n𝐀⇒𝐁:=¬𝐀∨𝐁,\n𝐀⇔𝐁:=(𝐀⇒𝐁)∧(𝐁⇒𝐀), and\n𝐹:=¬𝑇. We will use them like the primary\nconnectives\n∧\n                  and\n¬\n\n\n▷\n                  We use\n∃𝑋.𝐀\n                  as an abbreviation for\n¬(∀𝑋.¬𝐀).\n∃\n                  is a\nbinding operator\n                  called the\nexistential quantifier.\n\n\n▷\n                  Call\nformulae\n                  without\nconnectives\n                  or\nquantifiers\natomic\n                  else\ncomplex.\n\n\n\n:\nComputational Logic12024-12-14\n",
         "sectionId": "ad95eaa4",
         "archive": "courses/Jacobs/CompLog",
-        "filepath": "pl1/slides/pl1-syntax.en.xhtml"
+        "filepath": "pl1/slides/pl1-syntax.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 3040.59,
+        "end_time": 3195.51
     },
     {
         "slideContent": "\nAlternative Notations for Quantifiers\n\nHere Elsewhere∀𝑥.𝐀 ⋀𝑥.𝐀(𝑥)𝐀∃𝑥.𝐀 ⋁𝑥.𝐀\n\n\n\n:\nComputational Logic12024-12-16\n",
         "sectionId": "ad95eaa4",
         "archive": "courses/Jacobs/CompLog",
-        "filepath": "pl1/slides/pl1-notations.en.xhtml"
+        "filepath": "pl1/slides/pl1-notations.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 3195.51,
+        "end_time": 3244.8
     },
     {
         "slideContent": "\nFree\n              and\nBound\nVariables\n\n▷\n                  We call an\noccurrence\n                  of a\nvariable\n𝑋\nbound\n                  in a\nformula\n𝐀\n                  (otherwise\nfree), iff it occurs in a\nsub-formula\n∀𝑋.𝐁\n                  of\n𝐀.\n\nFor a\nformula\n𝐀, we will use\nBVar(𝐀)\n                  (and\nfree(𝐀)) for the\nset\n                  of\nbound\n                  (free)\nvariables\n                  of\n𝐀, i.e.\nvariables\n                  that have a\nfree/bound\noccurrence\n                  in\n𝐀.\n\n\n▷\n                  We define the\nset\nfree(𝐀)\n                  of\nfree\nvariables\n                  of a\nformula\n𝐀:\n\n\nfree(𝑋):={𝑋}free(𝑓(𝐀1,...,𝐀𝑛)):=⋃1≤𝑖≤𝑛free(𝐀𝑖)free(𝑝(𝐀1,...,𝐀𝑛)):=⋃1≤𝑖≤𝑛free(𝐀𝑖)free(¬𝐀):=free(𝐀)free(𝐀∧𝐁):=free(𝐀)∪free(𝐁)free(∀𝑋.𝐀):=free(𝐀)\\{𝑋}\n\n\n▷\n                  We call a\nformula\n𝐀\nclosed\n                  or\nground, iff\nfree(𝐀)=∅. We call a\nclosed\nproposition\n                  a\nsentence, and denote the\nset\n                  of all\nground\nterm\n                  with\n𝑐𝑤𝑓𝑓𝜄(Σ𝜄)\n                  and the\nset\n                  of\nsentences\n                  with\n𝑐𝑤𝑓𝑓𝑜(Σ𝜄).\n\n\n▷\nBound\nvariables\n                  can be renamed, i.e. any subterm\n∀𝑋.𝐁\n                  of a formula\n𝐀\n                  can be replaced by\n𝐀':=(∀𝑌.𝐁'), where\n𝐁'\n                  arises from\n𝐁\n                  by replacing all\n𝑋∊free(𝐁)\n                  with a new variable\n𝑌\n                  that does not occur in\n𝐀.\nWe call\n𝐀'\n                      an\nalphabetical variant\n                      of\n𝐀\n                      — and the other way around too.\n\n\n\n:\nComputational Logic12024-12-14\n",
         "sectionId": "ad95eaa4",
         "archive": "courses/Jacobs/CompLog",
-        "filepath": "pl1/slides/free-bound-alpha.en.xhtml"
+        "filepath": "pl1/slides/free-bound-alpha.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 3244.8,
+        "end_time": 3475.23
     },
     {
         "slideContent": "\nSemantics of\nPL1\n              (Models)\n\n▷\n                  We inherit the\ndomain\n𝒟0={𝖳,𝖥}\n                  of\ntruth values\n                  from\nPL0\n                  and assume an arbitrary\ndomain\n𝒟𝜄≠∅\n                  of\nindividuals.(this choice is a parameter to the semantics)\n\n\n▷\n                  An\ninterpretation\nℐ\nassigns\n                  values to\nconstants, e.g.\n\n\n▷ℐ(¬):𝒟0→𝒟0\n                  with\n𝖳↦𝖥,\n𝖥↦𝖳, and\nℐ(∧)=...(as in\nPL0)\n\n\n▷ℐ:Σ𝑘𝑓→𝒟𝜄𝑘→𝒟𝜄(interpret function symbols as arbitrary functions)\n\n\n▷ℐ:Σ𝑝𝑘→𝒫(𝒟𝜄𝑘)(interpret predicates as arbitrary relations)\n\n\n▷\n                  A\nvariable assignment\n𝜑:𝒱𝜄→𝒟𝜄\n                  maps\nvariables\n                  into the\ndomain.\n\n\n▷\n                  A\nmodel\nℳ=〈𝒟𝜄,ℐ〉\n                  of\nPL1\n                  consists of a\ndomain\n𝒟𝜄\n                  and an\ninterpretation\nℐ.\n\n\n\n:\nComputational Logic12024-12-14\n",
         "sectionId": "ad95eaa4",
         "archive": "courses/Jacobs/CompLog",
-        "filepath": "pl1/slides/pl1-model.en.xhtml"
+        "filepath": "pl1/slides/pl1-model.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 3500.12,
+        "end_time": 3631.09
     },
     {
         "slideContent": "\nSemantics of\nPL1\n              (Evaluation)\n\n▷Given a model\n〈𝒟,ℐ〉, the\nvalue function\nℐ𝜑\n                  is recursively defined:(two parts: terms & propositions)\n\n\n▷ℐ𝜑:𝑤𝑓𝑓𝜄(Σ1,𝒱𝜄)→𝒟𝜄\n                  assigns values to terms.\n\n\n▷ℐ𝜑(𝑋):=𝜑(𝑋)\n                  and\n\n\n▷ℐ𝜑(𝑓(𝐀1,...,𝐀𝑘)):=ℐ(𝑓)(map(/𝑚𝑛𝑡/𝑠𝑑𝑏1/𝑏𝑢𝑖𝑙𝑑𝑠𝑒𝑟𝑣𝑒𝑟/𝑀𝑎𝑡ℎ𝐻𝑢𝑏,ℐ𝜑(𝐀1),...,ℐ𝜑(𝐀𝑘))ℐ𝜑(𝐀1),...,ℐ𝜑(𝐀𝑘))\n\n\n▷ℐ𝜑:𝑤𝑓𝑓𝑜(Σ1,𝒱𝜄)→𝒟0\n                  assigns values to formulae:\n\n\n▷ℐ𝜑(𝑇)=ℐ(𝑇)=𝖳,\n\n\n▷ℐ𝜑(¬𝐀)=ℐ(¬)(ℐ𝜑(𝐀))\n\n\n▷ℐ𝜑(𝐀∧𝐁)=ℐ(∧)(ℐ𝜑(𝐀),ℐ𝜑(𝐁))(just as in\nPL0)\n\n\n▷ℐ𝜑(𝑝(𝐀1,...,𝐀𝑘)):=𝖳, iff\n〈map(/𝑚𝑛𝑡/𝑠𝑑𝑏1/𝑏𝑢𝑖𝑙𝑑𝑠𝑒𝑟𝑣𝑒𝑟/𝑀𝑎𝑡ℎ𝐻𝑢𝑏,ℐ𝜑(𝐀1),...,ℐ𝜑(𝐀𝑘))ℐ𝜑(𝐀1),...,ℐ𝜑(𝐀𝑘)〉∊ℐ(𝑝)\n\n\n▷ℐ𝜑(∀𝑋.𝐀):=𝖳, iff\nℐ𝜑,[𝖺/𝑋](𝐀)=𝖳\n                  for all\n𝖺∊𝒟𝜄.\n\n\n▷Assignment&#160;Extension\n\n\n\n:\nComputational Logic12024-12-14\n",
@@ -2660,37 +2721,55 @@
         "slideContent": "\nSemantics Computation: Example\n\n▷\n                  We define an instance of first-order logic:\n\n\n▷Signature: Let\nΣ0𝑓:={𝑗,𝑚},\nΣ1𝑓:={𝑓}, and\nΣ𝑝2:={𝑜}\n\n\n▷Universe:\n𝒟𝜄:={𝐽,𝑀}\n\n\n▷Interpretation:\nℐ(𝑗):=𝐽,\nℐ(𝑚):=𝑀,\nℐ(𝑓)(𝐽):=𝑀,\nℐ(𝑓)(𝑀):=𝑀, and\nℐ(𝑜):={(𝑀,𝐽)}.\n\n\nThen\n∀𝑋.𝑜(𝑓(𝑋),𝑋)\n                  is a\nsentence\n                  and with\n𝜓:=𝜑,[𝖺/𝑋]\n                  for\n𝖺∊𝒟𝜄\n                  we have\nℐ𝜑(∀𝑋.𝑜(𝑓(𝑋),𝑋))=𝖳iff\nℐ𝜓(𝑜(𝑓(𝑋),𝑋))=𝖳 for all 𝖺∊𝒟𝜄\n\n\niff\n(ℐ𝜓(𝑓(𝑋)),ℐ𝜓(𝑋))∊ℐ(𝑜) for all 𝖺∊{𝐽,𝑀}\n\n\niff\n(ℐ(𝑓)(ℐ𝜓(𝑋)),𝜓(𝑋))∊{(𝑀,𝐽)} for all 𝖺∊{𝐽,𝑀}\n\n\niff\n(ℐ(𝑓)(𝜓(𝑋)),𝑎)=(𝑀,𝐽) for all 𝖺∊{𝐽,𝑀}\n\n\niff\nℐ(𝑓)(𝑎)=𝑀 and 𝑎=𝐽 for all 𝖺∊{𝐽,𝑀}\n\n\nBut\n𝖺≠𝐽\n                  for\n𝖺=𝑀, so\nℐ𝜑(∀𝑋.𝑜(𝑓(𝑋),𝑋))=𝖥\n                  in the model\n〈𝒟𝜄,ℐ〉.\n\n\n\n:\nComputational Logic22024-12-14\n",
         "sectionId": "ad95eaa4",
         "archive": "courses/Jacobs/CompLog",
-        "filepath": "pl1/slides/pl1-semantics.en.xhtml"
+        "filepath": "pl1/slides/pl1-semantics.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 3875.94,
+        "end_time": 3906.6
     },
     {
         "slideContent": "\nSubstitutions on Terms\n\n▷Intuition\n                  If\n𝐁\n                  is a\nterm\n                  and\n𝑋\n                  is a\nvariable, then we denote the result of systematically replacing all\noccurrences\n                  of\n𝑋\n                  in a\nterm\n𝐀\n                  by\n𝐁\n                  with\n[𝐁/𝑋](𝐀).\n\n\n▷Problem\n                  What about\n[𝑍/𝑌],[𝑌/𝑋](𝑋), is that\n𝑌\n                  or\n𝑍?\n\n\n▷Folklore\n[𝑍/𝑌],[𝑌/𝑋](𝑋)=𝑌, but\n[𝑍/𝑌]([𝑌/𝑋](𝑋))=𝑍\n                  of course.\n(Parallel application)\n\n\n▷Substitutions\n\n\n▷Substitution&#160;Discharge\n\n\n▷Substitution ApplicationWe define\nsubstitution application\n                  by\n\n\n▷𝜎(𝑐)=𝑐\n                  for\n𝑐∊Σ\n\n\n▷𝜎(𝑋)=𝐀, iff\n𝑋∊𝒱\n                  and\n(𝑋,𝐀)∊𝜎.\n\n\n▷𝜎(𝑓(𝐀1,...,𝐀𝑛))=𝑓(map(/𝑚𝑛𝑡/𝑠𝑑𝑏1/𝑏𝑢𝑖𝑙𝑑𝑠𝑒𝑟𝑣𝑒𝑟/𝑀𝑎𝑡ℎ𝐻𝑢𝑏,(𝜎(𝐀1)),...,(𝜎(𝐀𝑛)))𝜎(𝐀1),...,𝜎(𝐀𝑛)),\n\n\n▷𝜎(∀𝑋.𝐀)=∀𝑋.𝜎−𝑋(𝐀).(∃\n                      analogous)\n\n\n▷\n[𝑎/𝑥],[𝑓(𝑏)/𝑦],[𝑎/𝑧]\n                  instantiates\n𝑔(𝑥,𝑦,ℎ(𝑧))\n                  to\n𝑔(𝑎,𝑓(𝑏),ℎ(𝑎)).\n\n\n\n:\nComputational Logic12024-12-14\n",
         "sectionId": "186555c6",
         "archive": "courses/Jacobs/CompLog",
-        "filepath": "pl1/slides/substitutions.en.xhtml"
+        "filepath": "pl1/slides/substitutions.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 3991.72,
+        "end_time": 4476.33
     },
     {
         "slideContent": "\nSubstitution Extension\n\n▷Substitution&#160;Extenion\n\n\n▷Note\n                  If\n𝜎\n                  is a\nsubstitution, then\n𝜎,[𝐀/𝑋]\n                  is also a\nsubstitution.\n\n\n▷We also need the dual operation: removing a variable from the support:\n\n\n▷Substitution&#160;Discharge\n\n\n\n:\n12024-12-14\n",
         "sectionId": "186555c6",
         "archive": "courses/Jacobs/GenCS/course",
-        "filepath": "logic/slides/substitution-extension.en.xhtml"
+        "filepath": "logic/slides/substitution-extension.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 4476.33,
+        "end_time": 4483.4
     },
     {
         "slideContent": "\nSubstitutions on Propositions\n\n▷Problem\n                  We want to extend\nsubstitutions\n                  to propositions, in particular to quantified formulae: What is\n𝜎(∀𝑋.𝐀)?\n\n\n▷Idea\n𝜎\n                  should not instantiate\nbound\nvariables.\n([𝐀/𝑋](∀𝑋.𝐁)=∀𝐀.𝐁'\n                      ill-formed)\n\n\n▷\n𝜎(∀𝑋.𝐀):=(∀𝑋.𝜎−𝑋(𝐀)).\n\n\n▷Problem\n                  This can lead to\nvariable capture:\n[𝑓(𝑋)/𝑌](∀𝑋.𝑝(𝑋,𝑌))\n                  would evaluate to\n∀𝑋.𝑝(𝑋,𝑓(𝑋)), where the second\noccurrence\n                  of\n𝑋\n                  is\nbound\n                  after instantiation, whereas it was\nfree\n                  before.\n\n\nSolution\nRename\n                  away the\nbound\nvariable\n𝑋\n                  in\n∀𝑋.𝑝(𝑋,𝑌)\n                  before applying the\nsubstitution.\n\n\n▷Capture-Avoiding Substitution Application\n                  Let\n𝜎\n                  be a\nsubstitution,\n𝐀\n                  a\nformula, and\n𝐀'\n                  an\nalphabetic variant\n                  of\n𝐀, such that\nintro(𝜎)∩BVar(𝐀)=∅. Then we define\ncapture-avoiding\nsubstitution application\n                  via\n𝜎(𝐀):=𝜎(𝐀').\n\n\n\n:\nComputational Logic12024-12-14\n",
         "sectionId": "186555c6",
         "archive": "courses/Jacobs/CompLog",
-        "filepath": "pl1/slides/substitutions-propositions-alpha.en.xhtml"
+        "filepath": "pl1/slides/substitutions-propositions-alpha.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 4483.4,
+        "end_time": 4770.12
     },
     {
         "slideContent": "\nSubstitution Value Lemma for Terms\n\n▷\n                  Let\n𝐀\n                  and\n𝐁\n                  be terms, then\nℐ𝜑([𝐁/𝑋]𝐀)=ℐ𝜓(𝐀), where\n𝜓=𝜑,[ℐ𝜑(𝐁)/𝑋].\n\n\n▷Proof:\nby induction on the depth of\n𝐀:\n\n1.depth=0\n\nThen\n𝐀\n                        is a variable (say\n𝑌), or constant, so we have three cases\n\n\n1.1.𝐀=𝑌=𝑋\n\n\n\n1.1.1.then\nℐ𝜑([𝐁/𝑋](𝐀))=ℐ𝜑([𝐁/𝑋](𝑋))=ℐ𝜑(𝐁)=𝜓(𝑋)=ℐ𝜓(𝑋)=ℐ𝜓(𝐀).\n\n\n1.2.𝐀=𝑌≠𝑋\n\n\n\n1.2.1.then\nℐ𝜑([𝐁/𝑋](𝐀))=ℐ𝜑([𝐁/𝑋](𝑌))=ℐ𝜑(𝑌)=𝜑(𝑌)=𝜓(𝑌)=ℐ𝜓(𝑌)=ℐ𝜓(𝐀).\n\n\n1.3.𝐀\n                          is a constant\n\n\n\n1.3.1.Analogous to the preceding case (𝑌≠𝑋).\n\n\n\n1.4.This completes the\nbase case\n                        (depth = 0).\n\n2.depth>0\n\n\n\n2.1.then\n𝐀=𝑓(𝐀1,...,𝐀𝑛)\n                        and we have\nℐ𝜑([𝐁/𝑋](𝐀))=ℐ(𝑓)(map(/𝑚𝑛𝑡/𝑠𝑑𝑏1/𝑏𝑢𝑖𝑙𝑑𝑠𝑒𝑟𝑣𝑒𝑟/𝑀𝑎𝑡ℎ𝐻𝑢𝑏,ℐ𝜑([𝐁/𝑋](𝐀1)),...,ℐ𝜑([𝐁/𝑋](𝐀𝑛)))ℐ𝜑([𝐁/𝑋](𝐀1)),...,ℐ𝜑([𝐁/𝑋](𝐀𝑛)))\n\n=ℐ(𝑓)(map(/𝑚𝑛𝑡/𝑠𝑑𝑏1/𝑏𝑢𝑖𝑙𝑑𝑠𝑒𝑟𝑣𝑒𝑟/𝑀𝑎𝑡ℎ𝐻𝑢𝑏,ℐ𝜓(𝐀1),...,ℐ𝜓(𝐀𝑛))ℐ𝜓(𝐀1),...,ℐ𝜓(𝐀𝑛))\n\n=ℐ𝜓(𝐀).\n\nby\ninduction hypothesis\n\n\n\n\n2.2.This completes the\ninduction step, and we have proven the assertion.\n\n\n:\nComputational Logic12024-12-15\n",
         "sectionId": "186555c6",
         "archive": "courses/Jacobs/CompLog",
-        "filepath": "pl1/slides/subst-value-lemma-terms.en.xhtml"
+        "filepath": "pl1/slides/subst-value-lemma-terms.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 5120.2,
+        "end_time": 5224.3
     },
     {
         "slideContent": "\nSubstitution Value Lemma for Propositions\n\n▷\nℐ𝜑([𝐁/𝑋](𝐀))=ℐ𝜓(𝐀), where\n𝜓=𝜑,[ℐ𝜑(𝐁)/𝑋].\n\n\n▷Proof:\nby induction on the number\n𝑛\n                  of\nconnectives\n                  and\nquantifiers\n                  in\n𝐀:\n\n1.𝑛=0\n\n\n\n1.1.then\n𝐀\n                        is an\natomic\nproposition, and we can argue like in the\ninduction step\n                        of the substitution value lemma for terms.\n\n\n2.𝑛>0\n                      and\n𝐀=¬𝐁\n                      or\n𝐀=𝐂◦𝐃\n\n\n\n2.1.Here we argue like in the\ninduction step\n                        of the term lemma as well.\n\n3.𝑛>0\n                      and\n𝐀=∀𝑌.𝐂\n                      where (WLOG)\n𝑋≠𝑌\n\n(otherwise rename)\n\n3.1.then\nℐ𝜓(𝐀)=ℐ𝜓(∀𝑌.𝐂)=𝖳, iff\nℐ𝜓,[𝑎/𝑌](𝐂)=𝖳\n                        for all\n𝑎∊𝒟𝜄.\n\n\n\n\n3.2.But\nℐ𝜓,[𝑎/𝑌](𝐂)=ℐ𝜑,[𝑎/𝑌]([𝐁/𝑋](𝐂))=𝖳, by\ninduction hypothesis.\n\n\n\n\n3.3.So\nℐ𝜓(𝐀)=ℐ𝜑(∀𝑌.[𝐁/𝑋](𝐂))=ℐ𝜑([𝐁/𝑋](∀𝑌.𝐂))=ℐ𝜑([𝐁/𝑋](𝐀))\n\n\n\n:\nComputational Logic12024-12-15\n",
         "sectionId": "186555c6",
         "archive": "courses/Jacobs/CompLog",
-        "filepath": "pl1/slides/subst-value-lemma-propositions-alpha.en.xhtml"
+        "filepath": "pl1/slides/subst-value-lemma-propositions-alpha.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 5224.3,
+        "end_time": 5363.98
     },
     {
         "slideContent": "\nFirst-Order Natural Deduction (𝒩𝒟1; Gentzen [Gen34])\n\n▷Rules for\nconnectives\n              just as always\n\n\n▷New Quantifier Rules\n                  The\nfirst-order natural deduction calculus\n𝒩𝒟1\n                  extends\n𝒩𝒟0\n                  by the following four rules:\n\n\n𝐀∀𝑋.𝐀𝒩𝒟1∀ℐ*∀𝑋.𝐀[𝐁/𝑋](𝐀)𝒩𝒟1∀ℰ\n[𝐁/𝑋](𝐀)∃𝑋.𝐀𝒩𝒟1∃ℐ∃𝑋.𝐀[[𝑐/𝑋](𝐀)]1\n...\n𝐂\n𝑐∊Σ0𝑠𝑘 new\n𝐂𝒩𝒟1∃ℰ1\n\n\n\n*\n                  means that\n𝐀\n                  does not depend on any hypothesis in which\n𝑋\n                  is\nfree.\n\n\n\n:\nComputational Logic12024-12-14\n",
@@ -3260,7 +3339,10 @@
         "slideContent": "\nSet-Theoretic Semantics and Predicate Logic\n\n▷\n                  Translation into\nPL1(borrow semantics from that)\n\n\n▷recursively add argument variable\n𝑥\n\n\n▷change back\n⊓,⊔,⊑,≡\n                  to\n∧,∨,⇒,⇔\n\n\n▷universal closure for\n𝑥\n                  at formula level.\n\n\nDefinition Comment𝑝―𝑓𝑜(𝑥):=𝑝(𝑥) 𝐀――𝑓𝑜(𝑥):=¬𝐀―𝑓𝑜(𝑥)𝐀⊓𝐁―𝑓𝑜(𝑥):=𝐀―𝑓𝑜(𝑥)∧𝐁―𝑓𝑜(𝑥) ∧ vs. ⊓𝐀⊔𝐁―𝑓𝑜(𝑥):=𝐀―𝑓𝑜(𝑥)∨𝐁―𝑓𝑜(𝑥) ∨ vs. ⊔𝐀⊑𝐁―𝑓𝑜(𝑥):=𝐀―𝑓𝑜(𝑥)⇒𝐁―𝑓𝑜(𝑥) ⇒ vs. ⊑𝐀=𝐁―𝑓𝑜(𝑥):=𝐀―𝑓𝑜(𝑥)⇔𝐁―𝑓𝑜(𝑥) ⇔ vs. =𝐀―𝑓𝑜:=(∀𝑥.𝐀―𝑓𝑜(𝑥)) for formulae\n\n\n\n:\nComputational Logic12024-12-14\n",
         "sectionId": "d727edec",
         "archive": "courses/Jacobs/CompLog",
-        "filepath": "kr/slides/pl0-set-semantics-pl1.en.xhtml"
+        "filepath": "kr/slides/pl0-set-semantics-pl1.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 960.35,
+        "end_time": 1111.09
     },
     {
         "slideContent": "\nTranslation Examples\n\n▷We translate the\nconcept axioms\n                  from\n??\n                  to fortify our intuition:\n𝗌𝗈𝗇⊑𝖼𝗁𝗂𝗅𝖽―𝑓𝑜=∀𝑥.𝗌𝗈𝗇(𝑥)⇒𝖼𝗁𝗂𝗅𝖽(𝑥)\n\n𝖽𝖺𝗎𝗀𝗁𝗍𝖾𝗋⊑𝖼𝗁𝗂𝗅𝖽―𝑓𝑜=∀𝑥.𝖽𝖺𝗎𝗀𝗁𝗍𝖾𝗋(𝑥)⇒𝖼𝗁𝗂𝗅𝖽(𝑥)\n\n𝗌𝗈𝗇⊓𝖽𝖺𝗎𝗀𝗁𝗍𝖾𝗋――𝑓𝑜=∀𝑥.𝗌𝗈𝗇(𝑥)∧𝖽𝖺𝗎𝗀𝗁𝗍𝖾𝗋(𝑥)―\n\n𝖼𝗁𝗂𝗅𝖽⊑𝗌𝗈𝗇⊔𝖽𝖺𝗎𝗀𝗁𝗍𝖾𝗋―𝑓𝑜=∀𝑥.𝖼𝗁𝗂𝗅𝖽(𝑥)⇒(𝗌𝗈𝗇(𝑥)∨𝖽𝖺𝗎𝗀𝗁𝗍𝖾𝗋(𝑥))\n\n\n\n▷What are the advantages of translation to\nPL1?\n\n\n▷theoretically: A better understanding of the semantics\n\n\n▷computationally: Description Logic Framework, but\nNOTHING for\nPL0\n\n▷we can follow this pattern for richer\ndescription logics.\n\n\n▷many tests are\ndecidable\n              for\nPL0, but not for\nPL1.(Description Logics?)\n\n\n\n:\nComputational Logic22024-12-14\n",
@@ -3656,7 +3738,10 @@
         "slideContent": "\nOur Agenda for This Topic\n\n▷Now\n                Background,\nplanning languages,\ncomplexity.\n\n\n▷Sets up the framework.\nComputational complexity\n                is essential to distinguish different\nalgorithmic\n                problems, and for the design of\nheuristic functions.\n(see next)\n\n\n▷Next\n                How to automatically generate a\nheuristic function, given\nplanning language\n                input?\n\n\n▷Focussing on\nheuristic search\n                as the solution method, this is the main question that needs to be answered.\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-15\n",
         "sectionId": "5f883ad1",
         "archive": "courses/FAU/AI/course",
-        "filepath": "planning/slides/planning-agenda.en.xhtml"
+        "filepath": "planning/slides/planning-agenda.en.xhtml",
+        "video_name": "AI1_25thDec.m4v",
+        "start_time": 2241.41,
+        "end_time": 2303.01
     },
     {
         "slideContent": "\nOur Agenda for This Chapter\n\n1.The History of Planning: How did this come about?\n\n\n▷Gives you some background, and motivates our choice to focus on\nheuristic search.\n\n\n2.The STRIPS Planning Formalism: Which concrete planning formalism will we be using?\n\n\n▷Lays the framework we’ll be looking at.\n\n\n3.The PDDL Language: What do the input files for off-the-shelf planning software look like?\n\n\n▷So you can actually play around with such software.\n(Exercises!)\n\n\n4.Planning Complexity: How\ncomplex\n            is\nplanning?\n\n\n▷The price of generality is complexity, and here’s what that “price” is, exactly.\n\n\n\nMichael Kohlhase:\nArtificial Intelligence 112024-12-15\n",
