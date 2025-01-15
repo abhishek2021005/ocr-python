@@ -4,6 +4,7 @@ __pycache__/
 
 # Ignore virtual environment folder
 venv/
+env/
 
 # Ignore results file if you don't want to track it in version control
 Results.json
