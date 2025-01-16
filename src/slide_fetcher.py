@@ -58,7 +58,6 @@ def load_from_disk(course_id: str, output_dir: str = "course_data") -> Dict:
 def main():
     course_id = "ai-1"
 
-    # Step 1: Check if data is already saved locally
     try:
         data = load_from_disk(course_id)
         print(f"Loaded data for course {course_id} from disk.")
@@ -67,13 +66,7 @@ def main():
         data = get_all_slides(course_id)
         save_to_disk(course_id, data)
         print(f"Data for course {course_id} saved locally.")
-
-    # Step 2: Display the saved FRAME slides
-    for section in data["sections"]:
-        print(f"Section ID: {section['sectionId']}")
-        for slide in section["slides"]:
-            print(f"  Slide Content (Text): {slide.get('slideContent')}")
-        print()
+        
 
 if __name__ == "__main__":
     main()
