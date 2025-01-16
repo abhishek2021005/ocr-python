@@ -43,8 +43,3 @@ def process_slides(input_file, output_file):
 
     print(f"Processed data has been saved to {output_file}")
 
-
-input_json = "course_data/ai-1_slides.json"
-output_json = "course_data/processed_ai-1_slides.json"
-
-process_slides(input_json, output_json)

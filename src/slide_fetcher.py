@@ -2,6 +2,8 @@ import os
 import json
 import requests
 from typing import List, Dict
+from process_slides import process_slides
+
 
 def fetch_section_info(course_id: str) -> List[Dict]:
     """Fetches section info for a given course ID."""
@@ -66,6 +68,11 @@ def main():
         data = get_all_slides(course_id)
         save_to_disk(course_id, data)
         print(f"Data for course {course_id} saved locally.")
+
+    input_json = "course_data/ai-1_slides.json"
+    output_json = "course_data/processed_ai-1_slides.json"
+
+    process_slides(input_json, output_json)
         
 
 if __name__ == "__main__":

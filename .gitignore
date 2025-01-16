@@ -8,4 +8,5 @@ env/
 
 # Ignore results file if you don't want to track it in version control
 Results.json
+
 course_data/ai-1_slides.json
